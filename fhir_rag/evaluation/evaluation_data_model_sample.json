@@ -1,0 +1,78 @@
+{
+    "experimentation_id": "9bcd43e8-6b32-4f90-a13b-921eed684fc5",
+    "experimentation_timestamp": "2024-10-09T14:32:00Z",
+    "experimentation_design": "Evaluation of Graph-based Retrieval Strategy",
+    "experimentation_status": "in_progress",
+    "consumer_id": "patient-12345",
+    "retrieval_phase": {
+      "retrieval_strategy": "similarity_search_bfs",
+      "configuration": {
+        "embedding_model": "BAAI/bge-small-en-v1.5",
+        "k": 50,
+        "similarity_threshold": 0.9
+      },
+      "retrieval_query": "Retrieve patient history and latest observations",
+      "retrieval_results": "\"Patient\": { \"resource_id\": \"12345\",\"resource_name\": \"John Doe\" }, \"Observation\": {\"resource_id\": \"67890\", \"resource_name\": \"Blood Pressure\"",
+      "latency_seconds": 0.523,
+      "tokens_count": 450,
+      "characters_count": 2100,
+      "fhir_resources": {
+        "Patient": 1,
+        "Observation": 3,
+        "Condition": 2
+      }
+    },
+    "augmentation_phase": {
+      "input_prompt": "Summarize patient's latest medical records",
+      "task_type": "summarization",
+      "system_prompt": "Generate a brief summary of patient's current health condition.",
+      "ground_truth": "The patient is in good health, with a slight increase in blood pressure.",
+      "input_tokens_count": 120,
+      "input_characters_count": 600
+    },
+    "generation_phase": {
+      "model_name": "GPT-4",
+      "model_configuration": {
+        "temperature": 0.7,
+        "max_tokens": 300,
+        "model_version": "4.0"
+      },
+      "output_text": "The patient is in generally good health, but recent observations show a minor elevation in blood pressure.",
+      "output_latency_seconds": 1.02,
+      "output_tokens_count": 70,
+      "output_characters_count": 380
+    },
+    "rag_phase": {
+      "rag_model_name": "GraphRAG-LLM",
+      "rag_configuration": {
+        "retrieval_depth": 3,
+        "context_window": 512
+      }
+    },
+    "ragas_evaluation": {
+      "evaluation_metrics": {
+        "faithfulness": 0.92,
+        "answer_relevance": 0.85,
+        "context_relevance": 0.88,
+        "response_relevance_score": 0.95
+      },
+      "execution_latency_seconds": 2.35
+    },
+    "agent_workflow": {
+      "metadata": {
+        "agent_type": "GraphRAG",
+        "workflow_step": "retrieve_resources",
+        "decision_reasoning": "high confidence"
+      },
+      "agent_performance": {
+        "agent_latency": 0.45,
+        "decision_accuracy": 0.98
+      },
+      "agent_errors": {
+        "error_type": "none",
+        "step": "fetch_resources",
+        "resolution": "success"
+      }
+    }
+  }
+  

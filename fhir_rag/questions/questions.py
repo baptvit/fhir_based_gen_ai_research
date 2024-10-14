@@ -1,0 +1,41 @@
+stanford_llm_on_fhir_questions = {
+    "Q1": "What are my current medications and how should I be taking them? ",
+    "Q2": "What are the most common side effects for each medication I am taking?",
+    "Q3": "Am I allergic to any of my medications?",
+    "Q4": "Can you summarize my current medical conditions?",
+    "Q5": "What are the health behaviors I should be incorporating into my daily routine to help with my conditions?",
+    "Q6": "Can you summarize my current medical conditions in German?",
+    "Q7": "What are my recent laboratory values, what do they mean, and how can I improve them?"
+}
+
+general_questions = {
+    "Q1": "What are my current medications and how should I be taking them?",
+    "Q2": "What are the most common side effects for each medication I am taking?",
+    "Q3": "Am I allergic to any of my medications?",
+    "Q4": "Can you summarize my current medical conditions?",
+    "Q5": "What are the health behaviors I should be incorporating into my daily routine to help with my conditions?",
+    "Q6": "Can you summarize my current medical conditions in German?",
+    "Q7": "What are my recent laboratory values, what do they mean, and how can I improve them?",
+    "Q8": "Can you summarize all the procedures I have undergone in the past year?",
+    "Q9": "What are the immunizations I have received, and when are my next ones due?",
+    "Q10": "What are the results of my most recent diagnostic imaging studies?",
+    "Q11": "What are the conditions I am at risk for based on my family history?",
+    "Q12": "What clinical measures are currently outside of the normal range for my age and gender?",
+    "Q13": "Can you summarize my care team and the roles they play in my treatment?",
+    "Q14": "What clinical notes have been recorded in my latest hospital visit?",
+    "Q15": "What are the current goals of my treatment plan, and how am I progressing?",
+    "Q16": "Can you provide a summary of my past hospital admissions?",
+    "Q17": "What are my recent allergy test results, and how do they impact my treatment?",
+    "Q18": "Which laboratory tests are due for follow-up, and when should I schedule them?",
+    "Q19": "How have my vital signs changed over the past six months?",
+    "Q20": "What medications should I avoid due to potential interactions with my current treatments?",
+    "Q21": "Can you summarize my recent clinical trials participation and outcomes?",
+    "Q22": "What are my past genetic test results, and how do they influence my current treatment options?",
+    "Q23": "What is the timeline of my care plan changes in the last year?",
+    "Q24": "What physical therapy exercises are recommended for my condition, and how frequently should I perform them?",
+    "Q25": "Can you summarize the outcomes of my most recent mental health assessments?",
+    "Q26": "What are my dietary restrictions, and how should they be adjusted for my condition?",
+    "Q27": "What are the most important upcoming preventive screenings I should schedule?",
+    "Q28": "How does my recent smoking cessation impact my health markers?",
+    "Q29": "How do my recent laboratory values compare with normal ranges for people of my age and gender?"
+}
